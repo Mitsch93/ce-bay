@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: CEBay Seeder Actor
+Implementation-Version: 1.0-SNAPSHOT
+Main-Class: at.jku.ce.bay.app.App
+

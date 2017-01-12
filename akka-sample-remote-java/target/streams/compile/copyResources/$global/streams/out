@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/src/main/resources/calculator.conf,/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/target/scala-2.11/classes/calculator.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/src/main/resources/common.conf,/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/target/scala-2.11/classes/common.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/src/main/resources/remotecreation.conf,/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/target/scala-2.11/classes/remotecreation.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/src/main/resources/remotelookup.conf,/Users/michaelortner/Documents/ws_uni/akka-sample-remote-java/target/scala-2.11/classes/remotelookup.conf)[0m

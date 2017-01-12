@@ -6,15 +6,16 @@ apply plugin: 'java'
 
 sourceCompatibility = 1.5
 
+repositories {
+    mavenCentral()
+}
+
 idea {
     module {
 
     }
 }
 
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version: '2.4.14'
@@ -22,3 +23,47 @@ dependencies {
     compile fileTree(dir: 'lib', include: '*.jar')
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+
+buildscript {
+
+    repositories {
+
+        jcenter()
+
+    }
+
+    dependencies {
+
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.4'
+
+    }
+
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+
+shadowJar {
+
+    archiveName = "server.jar"
+
+    manifest {
+
+        attributes 'Implementation-Title': 'CEBay Seeder Actor',
+
+                'Implementation-Version': version,
+
+                'Main-Class': 'at.jku.ce.bay.app.App'
+
+    }
+
+    transform(com.github.jengelman.gradle.plugins.shadow.transformers.AppendingTransformer) {
+
+        resource = 'reference.conf'
+
+    }
+
+}
+
+
+
+
